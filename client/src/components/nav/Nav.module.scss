@@ -1,0 +1,29 @@
+nav {
+  width: max-content;
+  display: block;
+  padding: 1rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border-tile);
+
+  @supports ((-webkit-backdrop-filter: saturate(180%) blur(20px)) or (backdrop-filter: saturate(180%) blur(20px))) {
+    background-color: var(--color-nav-bg);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+
+nav a {
+  background: transparent;
+  padding: 0.2rem;
+  display: flex;
+  color: var(--color-light);
+  font-size: 2rem;
+  transform: rotate(5deg);
+}
